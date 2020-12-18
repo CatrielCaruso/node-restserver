@@ -36,7 +36,11 @@ mongoose.connect(process.env.URLDB, {
 
 });
 
-app.use(require('./routes/usuario'));
+
+
+// Configuración global de rutas
+app.use(require('./routes/index'));
+
 
 
 app.listen(process.env.PORT, () => {
